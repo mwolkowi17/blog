@@ -10,25 +10,17 @@
     </head>
     <body>
         <div class="page-header">
-		<div class="container">
+		
             <h1 class="align-middle"><a href="/">Django Blog</a></h1>
-		</div>
+			
         </div>
-		<div class="container">
-     
-        
-          <div class="post-preview">
-            
-             
-              <h3 class="post-subtitle">
-                 {% block content %}
+             <div class="content container">
+                 <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
                     {% endblock %}
-              </h3>
-            
-            
-          </div>
-		  
-		  </div>
-             
+                 </div>
+            </div>
+    </div>
     </body>
 </html>
